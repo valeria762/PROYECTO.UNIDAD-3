@@ -1,0 +1,15 @@
+*{
+    margin: auto;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color: rgb(66, 5, 66);
+}
+header{
+   background-color: skyblue;
+}
+footer{
+    background-color: burlywood;
+}
