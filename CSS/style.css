@@ -9,7 +9,9 @@ body{
 }
 header{
    background-color: skyblue;
+   text-align: center;
 }
 footer{
     background-color: burlywood;
+    text-align: center;
 }
