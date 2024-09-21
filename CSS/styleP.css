@@ -1,0 +1,134 @@
+*{
+    margin: auto;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color: rgb(235, 235, 235);
+}
+header{
+   background-color: skyblue;
+   text-align: center;
+}
+footer{
+    background-color: burlywood;
+    text-align: center;
+}
+.imagen{
+    height: 230px;
+    width: 220px;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid rgb(230, 229, 229) ;
+    border-radius: 10px;
+    text-align: center;
+    display: block;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+} 
+p{
+    color: black;
+    height: 82px;
+    width: 180px;
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+}
+.article{
+   margin: 10px;
+   padding-left: 10px;
+   padding-right: 10px;
+}
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    border: 2px solid rgb(161, 147, 147);
+    border-radius: 10px;
+    background-color: white;
+    width: 240px;
+    height: 350px;
+    align-items: center;
+    padding: 1px;
+}
+.nombre{
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    width: 200px;
+}
+.price{
+    align-items: center;
+    width: 180px;
+    height: 25px;
+    margin: auto;
+    padding: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 1px;
+    color: white;
+    background-color: #020202;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.portada{
+    height: 300px; 
+    background-color: bisque;
+    background-image: "img/fondo.primavera.jpg";
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 1000px; /* Ajusta según la necesidad */
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid #333;
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    flex: 0 0 25%; /* Muestra 4 imágenes por vista (100% / 4) */
+    padding: 10px;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 200px; /* Ajusta la altura a tu preferencia */
+    object-fit: cover; /* Ajusta la imagen para que se mantenga dentro de su contenedor */
+  }
+  
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
