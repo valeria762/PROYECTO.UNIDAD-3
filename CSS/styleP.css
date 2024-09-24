@@ -92,7 +92,7 @@ p{
     padding: 5px;
 }
 
-footer {
+/*footer {
   text-align: center;
   padding: 1em 0;
   color: white;
@@ -100,11 +100,15 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
+}*/
+.primavera{
+ position: absolute;
+ height: 420px;
+ width: 100%;
 }
-
-.carousel-container {
+/*.carousel-container {
     position: relative;
-    max-width: 1000px; /* Ajusta según la necesidad */
+    max-width: 1000px; 
     margin: auto;
     overflow: hidden;
     border: 2px solid #333;
@@ -116,14 +120,14 @@ footer {
   }
   
   .slide {
-    flex: 0 0 25%; /* Muestra 4 imágenes por vista (100% / 4) */
+    flex: 0 0 25%; 
     padding: 10px;
   }
   
   .slide img {
     width: 100%;
-    height: 200px; /* Ajusta la altura a tu preferencia */
-    object-fit: cover; /* Ajusta la imagen para que se mantenga dentro de su contenedor */
+    height: 200px; 
+    object-fit: cover; 
   }
   
   button {
@@ -145,7 +149,7 @@ footer {
   
   .next {
     right: 10px;
-  }
+  }*/
   
 /*portada*/
 header {
@@ -190,14 +194,98 @@ header {
      color: white;
      text-align: center;
      font-family:'Edu Australia VIC WA NT Hand Dots';
+     padding: 30px;
  }
  .portada h1 {
      font-size: 2.5em;
      background-color: rgba(0, 0, 0, 0.5);
      padding: 10px;
+     position: absolute;
  }
  
  .Menu{
      font-family: 'Prompt';
      font-size: 20px;
  }
+
+ footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  font-family:'Edu Australia VIC WA NT Hand Dots';
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-section h3 {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 10px;
+}
+.footer-section p {
+  color: white;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  background-color: #222;
+  padding: 10px 0;
+}
+.footer-bottom p {
+  color: white;
+}
+/*social-media a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row; // o row para disposición horizontal 
+  gap: 3px; // Espacio entre elementos hijos 
+}
+
+.social-media a:hover {
+  text-decoration: underline;
+}
+*/
+.MedioPago{
+  height: 25px;
+  width: 40px;
+  align-items: center;
+  margin: 10px;
+}
+.social-media{
+  display: flex;
+  flex-direction: row; /* o row para disposición horizontal */
+  gap: 3px; /* Espacio entre elementos hijos */
+  margin: 10px;
+}

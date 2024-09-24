@@ -36,7 +36,7 @@ function getApi2(done){
     })
 }
 
-getApi2(data=>{
+/*getApi2(data=>{
     data.forEach(producto=>{
         const articulo1 = document.createRange().createContextualFragment(`
             <div class="slide"><img src="${producto.image}" alt="${producto.title}"></div>
@@ -73,38 +73,7 @@ nextButton.addEventListener('click', () => {
 
 prevButton.addEventListener('click', () => {
   showSlide(currentIndex - 1);
-});
-
-/*function getApi(done){
-  $.ajax({
-      url: 'https://fakestoreapi.com/products/${id}',
-      dataType: 'json',
-      success: function(data){
-          done(data);
-      }
-  })
-}
-getApi(data => {
-  data.forEach(producto => {
-      const articulo = document.createRange().createContextualFragment(`
-           <article>
-            <div class="container2">
-                <img src="${producto.image}" class="img"></img>
-                <div class="nombre1">
-                   <p>ID:${data.id}</<p>
-                   <p>${producto.title}</p>
-                   <p class="price">S/.${producto.price}</p> 
-                   <p>${producto.description}</p>
-                   <p>${producto.category}</<p>
-                </div>
-            </div>
-        </article>
-          `);
-          const main =document.querySelector("main");
-          main.append(articulo);
-      
-  });
-})*/
+});*/
 
 const btnBuscar = document.getElementById("btnBuscar");
 const resultadoDiv = document.getElementById("resultados");
@@ -122,14 +91,18 @@ btnBuscar.addEventListener('click',()=>{
 })
 .then(data => {
   resultadoDiv.innerHTML(`
-    <h2>Resultado:</h2>
-    <p>Nombre: $(data.title)</p>
-    <p>Precio: $(data.price)</p>
-    <p>Descripción: $(data.description)</p>
-    <p>Categoria: $(data.category)</p>
-    <img src="$(data.image)" alt="$(data.title)">
-    <p>Estadisticas:</p>
-    <p>Tasa: $(data.rate)</p>
-    <p>Count: $(data.count)</p>
-    `)
+    <article>
+      <h2>Resultado:</h2>
+      <p>Nombre: $(data.title)</p>
+      <p>Precio: $(data.price)</p>
+      <p>Descripción: $(data.description)</p>
+      <p>Categoria: $(data.category)</p>
+      <img src="$(data.image)" alt="$(data.title)">
+      <p>Estadisticas:</p>
+      <p>Tasa: $(data.rate)</p>
+      <p>Count: $(data.count)</p>
+    </article>
+    `);
+      const main =document.querySelector("main");
+            main.append(articulo);
 })
